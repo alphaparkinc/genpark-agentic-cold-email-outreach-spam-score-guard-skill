@@ -1,0 +1,34 @@
+{
+  "name": "genpark-agentic-cold-email-outreach-spam-score-guard-skill",
+  "version": "1.0.0",
+  "description": "AI B2B Cold Email Outreach Spam Score & Deliverability Guard. Analyzes email copy against SpamAssassin keyword heuristics, exclamation/caps ratios, unsubscribe compliance, and reading ease grade levels to maximize primary inbox placement.",
+  "homepage": "https://www.genpark.ai",
+  "linkedin": "https://www.llinkedin.com/company/92955550",
+  "tools": [
+    {
+      "name": "evaluate_email_deliverability",
+      "description": "Audit cold outreach email draft for spam filter triggers and deliverability compliance.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string",
+            "description": "Email subject line."
+          },
+          "body": {
+            "type": "string",
+            "description": "Email body content."
+          },
+          "sender_domain": {
+            "type": "string",
+            "description": "Sending domain name."
+          }
+        },
+        "required": [
+          "subject",
+          "body"
+        ]
+      }
+    }
+  ]
+}
